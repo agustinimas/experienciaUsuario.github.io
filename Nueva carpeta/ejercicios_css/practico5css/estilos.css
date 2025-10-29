@@ -1,0 +1,47 @@
+/* ======= Propiedades de texto (Pág. 13) ======= */
+h1 {
+  color: darkblue;
+  text-align: center;
+  font-size: 2em;
+}
+
+/* ======= Propiedades de bordes (Pág. 19) ======= */
+table, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/* ======= Propiedades de márgenes (Pág. 16) ======= */
+table {
+  margin: 30px auto;
+}
+
+/* ======= Propiedades de fondos (Pág. 20) ======= */
+td {
+  background-color: lightyellow;
+  padding: 8px; /* relleno interno */
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Filas pares con otro color */
+tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+/* Imágenes */
+img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Enlaces dentro de las celdas */
+a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+a:hover {
+  color: red;
+}

@@ -1,0 +1,102 @@
+/*
+  styles.css
+  Este archivo contiene todos los estilos para la página principal.
+*/
+
+/* 🎨 Definición de variables CSS para colores uniformes */
+:root {
+  --primary-color: #3f51b5; /* Azul Índigo para el encabezado */
+  --secondary-color: #ffffff; /* Blanco */
+  --background-light: #e8eaf6; /* Fondo muy claro */
+  --text-dark: #333;
+  --link-color: #5c6bc0; /* Azul de botón */
+  --link-hover-color: #3949ab;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  /* 💡 Flexbox para un layout moderno y pie de página fijo */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 30px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+/* El main toma el espacio disponible para empujar el footer */
+main {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra para resaltar la lista */
+  padding: 20px;
+}
+
+li {
+  margin: 20px 0;
+}
+
+a {
+  display: block; /* Para que el botón ocupe todo el ancho */
+  text-decoration: none;
+  color: var(--secondary-color);
+  background-color: var(--link-color);
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: background-color 0.3s, transform 0.2s;
+  letter-spacing: 0.5px;
+}
+
+a:hover {
+  background-color: var(--link-hover-color);
+  transform: translateY(-2px); /* Efecto sutil al pasar el ratón */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a:active {
+    transform: translateY(0);
+}
+
+footer {
+  width: 100%;
+  padding: 15px;
+  background-color: #cfd8dc; /* Gris más suave */
+  color: var(--text-dark);
+  font-size: 0.9em;
+  border-top: 1px solid #c5cae9;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+}
