@@ -14,17 +14,20 @@ table, td {
 /* ======= Propiedades de márgenes (Pág. 16) ======= */
 table {
   margin: 30px auto;
+  /* 🟢 CORRECCIÓN: Aplicar color de fondo a la tabla */
+  background-color: lightyellow;
 }
 
 /* ======= Propiedades de fondos (Pág. 20) ======= */
 td {
-  background-color: lightyellow;
+  /* 🔴 CORRECCIÓN: Quitar el background-color de TD para que se vea el TR */
   padding: 8px; /* relleno interno */
   text-align: center;
   vertical-align: middle;
 }
 
 /* Filas pares con otro color */
+/* Este estilo ahora será visible porque TD no lo oculta */
 tr:nth-child(even) {
   background-color: #f0f0f0;
 }
