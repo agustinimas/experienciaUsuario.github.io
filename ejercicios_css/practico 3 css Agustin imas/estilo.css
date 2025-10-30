@@ -1,0 +1,10 @@
+h1, h2 {
+  color: blue;
+  text-align: center;
+}
+p {
+  margin-left: 10%;
+  margin-right: 10%;
+  color: green;
+  text-align: justify;
+}
